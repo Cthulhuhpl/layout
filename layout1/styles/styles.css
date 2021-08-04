@@ -1,0 +1,230 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/*Navigation*/
+
+.btn-cta {
+    background-color: #5E81F4;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    display: block;
+    padding: 12px 20px;
+    margin: 20px;
+}
+.btn-cta,
+.btn-cta:hover,
+.btn-cta:active,
+.btn-cta:focus {
+    color: #fff;
+}
+.menu {
+    margin: 38px -30px 60px;
+}
+.menu .menu-item.active {
+    color: #272829;
+    background-color: unset;
+    position: relative;
+}
+.menu .menu-item.active::after{
+    content: '';
+    width: 3px;
+    height: 22px;
+    background-color: #5E81F4;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu .menu-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #8da1b5;
+    background-color: unset;
+    display: flex;
+    padding: 0 0 0 70px;
+
+}
+.menu .menu-item.active i {
+    color: #5e81f4;
+}
+.menu .menu-item i {
+    font-size: 12px;
+}
+.menu .menu-item div {
+    width: 20px;
+    height: 10px;
+    text-align: center;
+    line-height: 12px;
+}
+.menu .menu-item span {
+    margin-left: 15px;
+}
+.menu-item + .menu-item {
+    margin-top: 28px;
+}
+.navigation {
+    padding: 24px 0 12px;
+}
+.navigation-wrapper{
+    flex-basis: 1 0 270px;
+    min-width: 270px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+.profile-logo {
+    background-color: #5E81F4;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 12px;
+    font-family: 'Playfair', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.profile-text {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #5E81F4;
+    margin-left: 16px;
+}
+.upgrade {
+    background-color: #f5f5fb;
+    border-radius: 12px;
+    text-align: center;
+    padding: 0 24px 24px;
+}
+.upgrade img {
+    transform: translateY(-40%);
+}
+.upgrade p {
+    line-height: 1.37;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0 0 15px;
+    color: #778dad;
+}
+
+/* Main */
+.all-courses-page {
+    padding: 48px 32px 0;
+
+}
+.bell {
+    color: #768492;
+    font-size: 25px;
+}
+.filter {
+    margin: 46px 0 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filter h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.filter-controls .filter-controls-item button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(118, 132, 146, 0.8);
+}
+.filter-controls .filter-controls-item button.active{
+    background-color: unset;
+    color: #5e81f4;
+    position: relative;
+}
+.filter-controls button.active::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5e81f4;
+    width: 18px;
+    height: 2px;
+    bottom: -2px;
+}
+.main {
+    background-color: #e5e5e5;
+}
+.search {
+    position: relative;
+}
+.search-label {
+    position: absolute;
+    top: 16px;
+    left: 26px;
+    font-size: 20px;
+    color: #aab8c6;
+}
+.search-field {
+    width: 100%;
+    padding: 20px 20px 20px 56px ;
+    background-color: #fff;
+    border-radius: 10px;
+    border: none;
+    
+}
+.search-field ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ccd6eb;
+  }
+.search-field ::-moz-placeholder { /* Firefox 19+ */
+    color: #ccd6eb;
+  }
+.search-field :-ms-input-placeholder { /* IE 10+ */
+    color: #ccd6eb;
+  }
+.search-field :-moz-placeholder { /* Firefox 18- */
+    color: #ccd6eb;
+  }
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 240px;
+    border-radius: 16px;
+    padding: 34px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.course-title h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #fff;
+}
+.course-title p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgba(255,255,255, .8);
+}
+.course-full {
+    height: 310px;
+}
+.course-duration {
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(255,255,255, .8);
+}
+.course-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

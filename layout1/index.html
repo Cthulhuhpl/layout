@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!--   <link rel="stylesheet" href="styles/style.css">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <section class="col-2 vh-100 overflow-auto p-0 navigation-wrapper">
+        <nav class="navigation">
+          <div class="profile">
+            <div class="profile-logo">O</div>
+            <div class="profile-text">Ohara</div>
+          </div>
+          <a href="#" class="btn btn-cta"> Join a course </a>
+          <menu class="nav flex-column nav-pills me-auto menu" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <button class="nav-link menu-item" id="v-pills-dashboard-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard"
+              aria-selected="false">
+              <div><i class="fas fa-columns"></i></div>
+              <span>Dashboard</span>
+            </button>
+            <button class="nav-link active menu-item" id="v-pills-all-courses-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-all-courses" type="button" role="tab" aria-controls="v-pills-all-courses"
+              aria-selected="true">
+              <div><i class="fas fa-sitemap"></i></div>
+              <span>All courses</span>
+            </button>
+            <button class="nav-link menu-item" id="v-pills-resources-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-resources" type="button" role="tab" aria-controls="v-pills-resources"
+              aria-selected="false">
+              <div><i class="far fa-folder"></i></div>
+              <span>Resources</span>
+            </button>
+            <button class="nav-link menu-item" id="v-pills-friends-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-friends" type="button" role="tab" aria-controls="v-pills-friends"
+              aria-selected="false">
+              <div><i class="far fa-user"></i></div>
+              <span>Friends</span>
+            </button>
+            <button class="nav-link menu-item" id="v-pills-chats-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-chats" type="button" role="tab" aria-controls="v-pills-chats"
+              aria-selected="false">
+              <div><i class="far fa-comment-alt"></i></div>
+              <span>Chats</span>
+            </button>
+            <button class="nav-link menu-item" id="v-pills-settings-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+              aria-selected="false">
+              <div><i class="fas fa-cog"></i></div>
+              <span>Settings</span>
+            </button>
+          </menu>
+          <div class="upgrade">
+            <img src="img/letter.png" alt="" />
+            <p>Upgrade to for more resources</p>
+            <a href="#" class="btn btn-cta">Upgrade</a>
+          </div>
+        </nav>
+      </section>
+      <section class="col p-0 vh-100 main">
+        <main>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade " id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+              Dashboard</div>
+            <div class="tab-pane fade show active" id="v-pills-all-courses" role="tabpanel"
+              aria-labelledby="v-pills-all-courses-tab">
+              <div class="all-courses-page">
+                <div class="container-fluid p-0">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="search">
+                        <input placeholder="Search" class="search-field" type="text">
+                        <label class="search-label">
+                          <i class="fas fa-search"></i>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col d-flex align-items-center flex-row-reverse">
+                      <a href="#" class="bell">
+                        <i class="far fa-bell"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="filter col">
+                      <h3>All courses</h3>
+                      <ul class="nav nav-pills mb-3 filter-controls" id="pills-tab" role="tablist">
+                        <li class="nav-item filter-controls-item" role="presentation">
+                          <button class="nav-link active" id="pills-ongoing-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-ongoing" type="button" role="tab" aria-controls="pills-ongoing"
+                            aria-selected="true">Ongoing</button>
+                        </li>
+                        <li class="nav-item filter-controls-item" role="presentation">
+                          <button class="nav-link" id="pills-favorite-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-favorite" type="button" role="tab" aria-controls="pills-favorite"
+                            aria-selected="false">Favorite</button>
+                        </li>
+                        <li class="nav-item filter-controls-item" role="presentation">
+                          <button class="nav-link" id="pills-complete-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-complete" type="button" role="tab" aria-controls="pills-complete"
+                            aria-selected="false">Complete</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-ongoing" role="tabpanel" aria-labelledby="pills-ongoing-tab">
+                          <div class="container-fluid p-0">
+                            <div class="row">
+                              <div class="col">
+                                <div class="course course-full" style="background-image: url(img/courses/ui-design.png);">
+                                  <div class="course-header">
+                                    <div class="course-title">
+                                      <h4>UI/UX Design</h4>
+                                      <p>20 lessons</p>
+                                    </div>
+                                    <div class="course-duration">
+                                      2h 20min
+                                    </div>
+                                  </div>
+                                  <div class="course-footer">
+                                    <div class="course-play">
+                                      <a href="#">
+                                        <img src="img/play.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="course-avatar">
+                                      <img src="img/users/user1.png" alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row pt-4">
+                              <div class="col">
+                                <div class="course" style="background-image: url(img/courses/photo.png);">
+                                  <div class="course-header">
+                                    <div class="course-title">
+                                      <h4>Photography</h4>
+                                      <p>12 lessons</p>
+                                    </div>
+                                    <div class="course-duration">
+                                      <p>1h 20min</p>
+                                    </div>
+                                  </div>
+                                  <div class="course-footer">
+                                    <div class="course-play">
+                                      <a href="#">
+                                        <img src="img/play.png" alt="">
+                                      </a>
+                                    </div>
+                                    <div class="course-avatar">
+                                      <img src="img/users/profile.png " alt="">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>   
+                            <div class="col">
+                              <div class="course" style="background-image: url(img/courses/animation.png);">
+                                <div class="course-header">
+                                  <div class="course-title">
+                                    <h4>Animation</h4>
+                                    <p>12 lessons</p>
+                                  </div>
+                                  <div class="course-duration">
+                                    <p>2h 30min</p>
+                                  </div>
+                                </div>
+                                <div class="course-footer">
+                                  <div class="course-play">
+                                    <a href="#">
+                                      <img src="img/play.png" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="course-avatar">
+                                    <img src="img/users/profile.png" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-favorite" role="tabpanel"
+                          aria-labelledby="pills-favorite-tab">Favorite</div>
+                        <div class="tab-pane fade" id="pills-complete" role="tabpanel"
+                          aria-labelledby="pills-complete-tab">Complete</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-resources" role="tabpanel" aria-labelledby="v-pills-resources-tab">
+              Resources</div>
+            <div class="tab-pane fade" id="v-pills-friends" role="tabpanel" aria-labelledby="v-pills-friends-tab">
+              Friends</div>
+            <div class="tab-pane fade" id="v-pills-chats" role="tabpanel" aria-labelledby="v-pills-chats-tab">Chats
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              Settings</div>
+          </div>
+    </div>
+    </main>
+    </section>
+    <section class="col-3 vh-100 overflow-auto p-0">
+      <aside></aside>
+    </section>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
